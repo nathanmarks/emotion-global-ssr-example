@@ -1,0 +1,47 @@
+{
+  "name": "emotion-issue-template",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@emotion/cache": "^10.0.29",
+    "@emotion/core": "10.0.35",
+    "@emotion/css": "10.0.27",
+    "@emotion/styled": "10.0.27",
+    "create-emotion-server": "^10.0.27",
+    "http-server": "^0.12.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-scripts": "3.4.4"
+  },
+  "devDependencies": {
+    "@babel/node": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-replace": "^2.3.3",
+    "express": "^4.17.1",
+    "rollup": "^2.32.1",
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "rollup -c && babel-node server.js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  }
+}
